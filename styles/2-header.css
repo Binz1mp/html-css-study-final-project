@@ -50,7 +50,7 @@
     background-position: center;
   }
   .header__menu-btn:checked {
-    background-color: var(--color-dark);
+    background-color: #0e0e0e;
   }
   .header__menu-btn:checked + .header__nav {
     display: inherit;
@@ -62,6 +62,7 @@
   }
   .header__nav-item {
     width: 100vw;
+    background-color: #181818;
     text-align: center;
   }
   .header__nav-item a {

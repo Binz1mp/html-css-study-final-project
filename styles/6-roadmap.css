@@ -1,9 +1,9 @@
 #roadmap {
   background-color: var(--color-dark-bg);
 }
-#roadmap .section__title {
+/* #roadmap .section__title {
   color: white;
-}
+} */
 .roadmap {
   display: inline-block;
   position: relative;

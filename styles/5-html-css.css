@@ -29,6 +29,12 @@ section#vuejs em { color: #29f1a4; }
   font-size: var(--font-size-larger);
   color: var(--color-lighter);
 }
+#html, #css, #js, #vuejs {
+  background-color: #1e1f31;
+}
+.html-css__desc, article div, article dd {
+  color: #b4b4b4 !important;
+}
 
 /* 초록색 체크표시 */
 .html-css__spec dd::before {
