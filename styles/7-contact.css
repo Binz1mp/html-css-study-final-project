@@ -1,0 +1,72 @@
+#contact {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: var(--color-light-bg);
+}
+.contact {
+  margin-top: 1em;
+}
+.contact__tab {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--font-size-larger);
+}
+
+.contact__contacts {
+  margin: 0 auto;
+  text-align: left;
+  color: var(--color-text);
+}
+.contact__contacts th {
+  padding-right: 3em;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: right;
+  color: var(--color-dark);
+  border-right: 4px solid var(--color-light-bd);
+}
+.contact__contacts a:hover {
+  color: var(--color-emph);
+  text-decoration: underline;
+}
+.contact__contacts img {
+  margin-right: 0.1em;
+  width: 32px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .contact__contacts th {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .contact__contacts tr > * {
+    padding: 0.6em;
+  }
+  .contact__contacts td::before {
+    content: '▶';
+    margin-right: 0.6em;
+    font-size: 0.67em;
+    opacity: 0.5;
+  }
+  .contact__leave {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  #contact {
+    grid-column: 1 / -1;
+  }
+  .contact__contacts {
+    border-spacing: 3em 1em;
+  }
+}
